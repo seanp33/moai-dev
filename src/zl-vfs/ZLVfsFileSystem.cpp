@@ -363,7 +363,7 @@ void ZLVfsFileSystem::Init () {
 	char buffer [ FILENAME_MAX ];
 
 	char* result = getcwd ( buffer, FILENAME_MAX );
-	assert ( result );
+	//assert ( result );
 	
 	this->mWorkingPath = this->NormalizeDirPath ( buffer );
 }
