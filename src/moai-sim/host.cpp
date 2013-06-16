@@ -209,6 +209,9 @@ void AKUInitializeSim () {
 	REGISTER_LUA_CLASS ( MOAITextBox )
 	REGISTER_LUA_CLASS ( MOAITextStyle )
 	
+	// per https://github.com/moai/moai-dev/issues/699
+	REGISTER_LUA_CLASS ( MOAIFreeTypeFontReader )
+	
 	#if MOAI_WITH_TINYXML
 		//REGISTER_LUA_CLASS ( MOAIParticlePexPlugin )
 	#endif
